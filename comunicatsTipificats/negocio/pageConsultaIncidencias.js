@@ -4,6 +4,7 @@ var sDireccionConsulta = '';
 var aMarcadoresSobrePlano = new Array();
 
 function inicioPaginaConsultaIncidencias(){
+    alert('Estoy dentro del inicioPaginaConsultaIncidencia');
     //hgs nou
     $('#buttonMostrarEnPlano').attr({"style":"display:block","src":""});
     $('#buttonBorrarHistoricoComunicados').attr({"style":"display:block","src":""});

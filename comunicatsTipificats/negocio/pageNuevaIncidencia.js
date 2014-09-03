@@ -23,7 +23,7 @@ var bPrimera;
 
 // -------- INICIALIZAR PÁGINA -----------------------------------------------------------
 function inicioPaginaNuevaIncidencia(){
-
+    alert('Estoy dentro del inicioPaginaNuevaIncidencia');
     //cargar los datos del usuario (tabla CIUTADA si tiene datos)
     var ciu = cargaDatosCiudadano();
     //Si los datos del ciudadano están guardados, se arranca la página como comunicació NO anónima y el acordeón 'qui soc' cerrado

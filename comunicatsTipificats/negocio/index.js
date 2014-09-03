@@ -73,6 +73,7 @@ function onConfirm(button) {
 //transition: "fade",
 function abrirPagina(sPag, bBack) {
 
+    alert('Entro en abrirPagina');
 
     $.mobile.changePage('#' + sPag, {
         transition: "none",
@@ -83,15 +84,18 @@ function abrirPagina(sPag, bBack) {
     switch(sPag)
     {
         case 'pageNuevaIncidencia' :
+            alert('Estoy en el switch de abrir NuevaIncidencia');
             $.doTimeout(1500, inicioPaginaNuevaIncidencia() );
             break;
 
         case 'pageConsultaIncidencias' :
+            alert('Estoy en el switch de abrir consultarIncidencia');
             inicioPaginaConsultaIncidencias();
             $.doTimeout(1000, mostrarEnPlano() );
             break;
 
         case 'pageZoomFoto' :
+            alert('Estoy en el switch de zoomfoto');
             var imagen = document.getElementById('imgZoomFoto');
             imagen.style.display = 'block';
             imagen.src = "data:image/jpeg;base64," + sFoto;
