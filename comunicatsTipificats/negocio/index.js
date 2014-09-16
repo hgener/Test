@@ -28,10 +28,11 @@ function deviceReady() {
     }
 
     //Hay localstorage ?
+    //hgs Proves mwindows phone 160914
     if( ! $.jStorage.storageAvailable() )
     {
-        estadoBoton('buttonALTA', false);
-        estadoBoton('buttonCONSULTA', false);
+        //estadoBoton('buttonALTA', false);
+        //estadoBoton('buttonCONSULTA', false);
         $('#labelInfo').text($('#labelInfo').text() + '\nAtenció : localStorage no soportat');
         return;
     }
