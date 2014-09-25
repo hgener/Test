@@ -28,11 +28,12 @@ function deviceReady() {
     }
 
     //Hay localstorage ?
-    //hgs Proves mwindows phone 160914
+
     if( ! $.jStorage.storageAvailable() )
     {
-        //estadoBoton('buttonALTA', false);
-        //estadoBoton('buttonCONSULTA', false);
+        //hgs Proves mwindows phone 160914, SI SE COMENTAN SE ACTIVAN LOS BOTONES EN WP8.1
+        estadoBoton('buttonALTA', false);
+        estadoBoton('buttonCONSULTA', false);
         $('#labelInfo').text($('#labelInfo').text() + '\nAtenció : localStorage no soportat');
         return;
     }
