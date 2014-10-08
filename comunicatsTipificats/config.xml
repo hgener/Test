@@ -69,13 +69,20 @@
 
     <!--hgs comentado pq he añadido los plugins-->
   <feature name="http://api.phonegap.com/1.0/camera"/>
+
   <feature name="http://api.phonegap.com/1.0/file"/>
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   <feature name="http://api.phonegap.com/1.0/media"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
 
-   <plugin name="Capture" value="CDVCapture" />
+<!-- hgs 08/10/2014 -->
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+    </feature>
+
+
+    <plugin name="Capture" value="CDVCapture" />
    <plugin name="Camera" value="CDVCamera" />
     <!--hgs para splash-->
     <plugin name="SplashScreen" value="”org.apache.cordova.SplashScreen"/>
