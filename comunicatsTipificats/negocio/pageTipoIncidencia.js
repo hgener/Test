@@ -52,7 +52,7 @@ function mostrarImagenes()	{
                 //sTagImg += "<img src='" + dicImagenes[sImagen] + "' id='" + sImagen + "' class='img-swap' alt='" + dicImagenes[sImagen] + "' width='54' height='70' /> "
 
 
-            sTagImg +="<a href='' data-mini='false' data-inline='false' data-role='button' data-theme='c' data-corners='true' data-shadow='true' data-iconshadow='true' data-wrapperels='span' class='ui-btn ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-first-child ui-btn-up-c'>"
+            sTagImg += "<a href='' onclick='" + "selectTipo(" + sImagen + ")' data-mini='false' data-inline='false' data-role='button' data-theme='c' data-corners='true' data-shadow='true' data-iconshadow='true' data-wrapperels='span' class='ui-btn ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-first-child ui-btn-up-c'>"
             sTagImg +="<span class='ui-btn-inner'>"
             sTagImg +="<span class='ui-btn-text'>"
                 sTagImg +="<img alt='' src='" + dicImagenes[sImagen] + "' style='float:left;width:30px' />"
@@ -63,3 +63,6 @@ function mostrarImagenes()	{
 
 };
 
+function selectTipo(p_tipo) {
+    abrirPagina('pageDatosIncidencia', false);
+}

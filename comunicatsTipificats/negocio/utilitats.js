@@ -129,14 +129,14 @@ function crearMarcadorEventoClick(sMODO, map, bSoloUnMarcadorSobreMapa , labelMo
             cogerDireccion(event.latLng, true);   //true ==> solo calle y num
             $.doTimeout(700, function(){
                 //alert('sDireccion en CrearMarcadorEventoClick es ' +  sDireccionAlta);
-                actualizarComboCalle();
+                //actualizarComboCalle();
                 if(sDireccionAlta == '')
                 {
                     sDireccionAlta  = event.latLng.lat() + " , " + event.latLng.lng();
                     $('#labelDireccion').text(sDireccionAlta); //hgs 101213
                     //hgs asquito
                     //alert('a limpiar combos calles');
-                    actualizarComboCalle();
+                    //actualizarComboCalle();
                     bDirEsLatLon = true;
                 }
                 else
@@ -148,9 +148,9 @@ function crearMarcadorEventoClick(sMODO, map, bSoloUnMarcadorSobreMapa , labelMo
                 //alert('crearMarcadorEventoClick');
                 nuevoMarcadorSobrePlanoClickInfoWindow(sMODO, map, event.latLng, sTxt,null, 300, true, true, labelMostrarDir);
 
-                if(sMODO == 'ALTA')
-                    if(indefinidoOnullToVacio(bActualizarControlesManualesCalleNum) != '' && !bDirEsLatLon)
-                        if(bActualizarControlesManualesCalleNum) autoRellenoCalleNum();
+                //if(sMODO == 'ALTA')
+                //    if(indefinidoOnullToVacio(bActualizarControlesManualesCalleNum) != '' && !bDirEsLatLon)
+                //        if(bActualizarControlesManualesCalleNum) autoRellenoCalleNum();
 
             });
         }
@@ -176,14 +176,14 @@ function crearMarcadorEventoClick(sMODO, map, bSoloUnMarcadorSobreMapa , labelMo
                 cogerDireccion(event.latLng, true);   //true ==> solo calle y num
                 $.doTimeout(700, function(){
                     //alert('sDireccion en CrearMarcadorEventoClick es ' +  sDireccionAlta);
-                    actualizarComboCalle();
+                    //actualizarComboCalle();
                     if(sDireccionAlta == '')
                     {
                         sDireccionAlta  = event.latLng.lat() + " , " + event.latLng.lng();
                         $('#labelDireccion').text(sDireccionAlta); //hgs 101213
                         //hgs asquito
                         //alert('a limpiar combos calles');
-                        actualizarComboCalle();
+                        //actualizarComboCalle();
                         bDirEsLatLon = true;
                     }
                     else
@@ -198,9 +198,9 @@ function crearMarcadorEventoClick(sMODO, map, bSoloUnMarcadorSobreMapa , labelMo
                     //alert('crearMarcadorEventoClick');
                     nuevoMarcadorSobrePlanoClickInfoWindow(sMODO, map, event.latLng, sTxt,null, 300, true, true, labelMostrarDir);
 
-                    if(sMODO == 'ALTA')
-                        if(indefinidoOnullToVacio(bActualizarControlesManualesCalleNum) != '' && !bDirEsLatLon)
-                            if(bActualizarControlesManualesCalleNum) autoRellenoCalleNum();
+                    //if(sMODO == 'ALTA')
+                    //    if(indefinidoOnullToVacio(bActualizarControlesManualesCalleNum) != '' && !bDirEsLatLon)
+                    //        if(bActualizarControlesManualesCalleNum) autoRellenoCalleNum();
 
                 });
             }
